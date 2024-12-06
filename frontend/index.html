@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="registration-section">
+        <h1>Register</h1>
+        <form id="register-form">
+            <input type="text" id="mobile-number" placeholder="Mobile Number" required>
+            <button type="submit">Register</button>
+        </form>
+        <div id="verification-section" style="display:none;">
+            <h2>Verify</h2>
+            <input type="text" id="verification-code" placeholder="Verification Code" required>
+            <button id="verify-button">Verify</button>
+        </div>
+    </div>
+    <div id="main-page" style="display:none;">
+        <button id="menu-button">☰</button>
+        <div id="menu" style="display:none;">
+            <ul>
+                <li><a href="#" id="profile-link">Profile</a></li>
+                <li><a href="#" id="wallet-link">Wallet</a></li>
+                <li><a href="#" id="about-link">About Us</a></li>
+                <li><a href="#" id="contact-link">Contact Us</a></li>
+            </ul>
+        </div>
+        <button id="ludo-button">Ludo</button>
+    </div>
+    <div id="game-setup" style="display:none;">
+        <h2>Set Amount</h2>
+        <select id="amount-select">
+            <option value="10">10</option>
+            <option value="20">20</option>
+            <option value="30">30</option>
+            <option value="40">40</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <button id="play-button" style="display:none;">Play</button>
+        <button id="insufficient-funds-button" style="display:none;">Insufficient Funds</button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
